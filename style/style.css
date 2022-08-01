@@ -16,21 +16,27 @@ fieldset { border-width:0; padding:0; margin:0; }
 }
 
 body {
-	background: #FFFBF8;
+	background-color: #FFFBF8;
 	font-family: 'nunito';
 }
 
 .background {
-	background: #FFFBF8 url(/image/back1.jpg) no-repeat;
-	width: 100%;
-	background-size: 100%;
-	color: #FFFFFF
+	background: #FFFBF8 url(/image/back1.jpg) no-repeat top center;
+	background-size: cover;
+	color: #FFFFFF;
+	margin-bottom: 160px;
 }
 
 h1 {
 	font-weight: 800;
 	font-size: 56px;
 	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 60px;
 }
 
 h3 {
@@ -100,6 +106,7 @@ h3 {
 .header__container-nav a {
 	padding: 15px;
 	font-size: 20px;
+	font-weight: 300;
 }
 
 .header__container-nav a:first-of-type {
@@ -113,7 +120,7 @@ h3 {
 	color: #FF8F00;
 }
 
-/* offer */
+/* ПЕРВЫЙ БЛОК ПОСЛЕ ШАПКИ БЛОК ОФФЕР */
 .offer {
 	max-width: 908px;
 	margin-left: 76px;
@@ -145,7 +152,6 @@ h3 {
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 24px;
-	font-weight: 600;
 }
 
 .swipe a img {
@@ -154,9 +160,138 @@ h3 {
 }
 
 .swipe a img:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 .swipe a {
 	padding: 10px;
+}
+
+/* ВТОРОЙ БЛОК С МУЖИКОМ */
+
+.aboutus-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutus-container__wrap {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 160px;
+}
+
+.aboutus-container__wrap-left ul,
+.aboutus-container__wrap-right ul{
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: space-between;
+	height: 525px;
+}
+
+.aboutus-container__wrap-left ul li {
+	list-style: none;
+	background-image: url(/icons/Ellipse4.svg);
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: right;
+	background-position-y: 5px;
+	padding-right: 29px;
+	height: 30px;
+	text-align: right;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.aboutus-container__wrap-left ul li:hover {
+	background-image: url(/icons/ellipses.svg);
+}
+
+.aboutus-container__wrap-left ul li:nth-child(n+2):nth-child(-n+3) {
+	margin-right: 72px;
+}
+
+.aboutus-container__wrap-center {
+	margin: 0 15px;
+}
+
+.aboutus-container__wrap-right ul li {
+	list-style: none;
+	background-image: url(/icons/Ellipse4.svg);
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: left;
+	background-position-y: 5px;
+	padding-left: 29px;
+	height: 30px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.aboutus-container__wrap-right ul li:hover {
+	background-image: url(/icons/ellipses.svg);
+}
+
+.aboutus-container__wrap-right ul li:nth-child(n+2):nth-child(-n+3) {
+	margin-left: 78px;
+}
+
+/* ТРЕТИЙ БЛОК ПРО КОМАНДУ */
+
+.container-team {
+	text-align: center;
+	max-width: 1132px;
+	margin: 0 auto;
+}
+
+.container-team__wrap {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 160px;
+}
+
+.container-team__item {
+	width: 337px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.container-team__item img {
+	margin-bottom: 20px;
+}
+
+/* ЧЕТВЕРТЫЙ БЛОК ПРЕИМУЩЕСТВА */
+.container-benefits__wrap {
+	display: flex;
+
+}
+
+.container-benefits__wrap-text {
+	background: url(/image/shadow.jpg) no-repeat;
+	width: 412px;
+	margin-right: 28px;
+}
+.container-benefits__wrap-text p {
+	font-size: 20px;
+	width: 382px;
+	margin: 30px 15px;
+}
+
+.container-benefits__wrap-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 770px;
+	width: 100%;
+}
+
+.container-benefits__wrap-list ul {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: space-between;
+	height: 572px;
 }
