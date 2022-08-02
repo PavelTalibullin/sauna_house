@@ -21,7 +21,7 @@ body {
 }
 
 .background {
-	background: #FFFBF8 url(/image/back1.jpg) no-repeat top center;
+	background:url(/image/back1.jpg) no-repeat top center;
 	background-size: cover;
 	color: #FFFFFF;
 	margin-bottom: 160px;
@@ -36,7 +36,7 @@ h1 {
 h2 {
 	font-size: 48px;
 	font-weight: 600;
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 }
 
 h3 {
@@ -98,10 +98,23 @@ h3 {
 	justify-content: space-between;
 }
 
-.header__container-nav ul img {
-	vertical-align: middle;
-	padding-left: 12px;
+.header__container-nav ul li:nth-child(4),
+.header__container-nav ul li:nth-child(6) {
+	list-style: none;
+	background: url(/icons/arrow-bottom.svg) no-repeat;
+	background-size: 18px;
+	height: 25px;
+	background-position: right;
+	padding-right: 25px;
+	background-position-y: 5px;
 }
+
+.header__container-nav ul li:nth-child(4):hover,
+.header__container-nav ul li:nth-child(6):hover{
+	background-image: url(/icons/arrow-orange.svg);
+
+}
+
 
 .header__container-nav a {
 	padding: 15px;
@@ -179,7 +192,7 @@ h3 {
 .aboutus-container__wrap {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 160px;
+	padding-bottom: 160px;
 }
 
 .aboutus-container__wrap-left ul,
@@ -244,12 +257,12 @@ h3 {
 	text-align: center;
 	max-width: 1132px;
 	margin: 0 auto;
+	padding-bottom: 160px;
 }
 
 .container-team__wrap {
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 160px;
 }
 
 .container-team__item {
@@ -264,20 +277,36 @@ h3 {
 }
 
 /* ЧЕТВЕРТЫЙ БЛОК ПРЕИМУЩЕСТВА */
+.background-benefits {
+	background: url(/image/background3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.container-benefits__h {
+	padding-top: 50px;
+	color: #FFFFFF;
+}
+
 .container-benefits__wrap {
 	display: flex;
-
+	width: 0 auto;
+	padding-bottom: 121px;
 }
 
 .container-benefits__wrap-text {
-	background: url(/image/shadow.jpg) no-repeat;
-	width: 412px;
+	background-image: url(/image/shadow.svg);
+	background-repeat: no-repeat;
+	backdrop-filter: blur(2px);
+	max-width: 412px;
 	margin-right: 28px;
+	height: 384px;
 }
+
 .container-benefits__wrap-text p {
-	font-size: 20px;
 	width: 382px;
+	font-size: 20px;
 	margin: 30px 15px;
+	color: #FFFFFF;
 }
 
 .container-benefits__wrap-list {
@@ -286,6 +315,8 @@ h3 {
 	justify-content: space-between;
 	max-width: 770px;
 	width: 100%;
+	margin-top: 53px;
+	color: #FFFFFF;
 }
 
 .container-benefits__wrap-list ul {
@@ -295,3 +326,61 @@ h3 {
 	justify-content: space-between;
 	height: 572px;
 }
+
+.container-benefits__wrap-list ul li {
+	background-image: url(/icons/Ellipse3.svg);
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: left;
+	background-position-y: 5px;
+	padding-left: 29px;
+	height: 30px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.container-benefits__wrap-list ul li:hover {
+	background-image: url(/icons/ellipses4.svg);
+	background-position-y: -9px;
+	background-position-x: -12px;
+	background-size: 50px;
+}
+
+.container-benefits__wrap-list ul li:nth-child(1) {
+	align-self: flex-end;
+}
+.container-benefits__wrap-list ul li:nth-child(2) {
+	margin-left: 32px;
+}
+.container-benefits__wrap-list ul li:nth-child(3) {
+	align-self: flex-end;
+	margin-right: 32px;
+}
+.container-benefits__wrap-list ul li:nth-child(5) {
+	align-self: flex-end;
+}
+
+/* ПЯТЫЙ БЛОК МАТЕРИАЛЫ ОТДЕЛКИ */
+.container-material {
+	max-width: 912px;
+	margin: 160px auto;
+	text-align: center;
+}
+
+.container-material__tree {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 20px;
+}
+
+.container-material__tree-item img {
+	margin-bottom: 20px;
+}
+
+.container-material__tree-item p {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/* ШЕСТОЙ БЛОК ПОРТФОЛИО */
