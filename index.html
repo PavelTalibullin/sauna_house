@@ -15,12 +15,13 @@
 	<meta property="og:site_name" content="Банный дом: строительство бань">
 	<meta property="og:description" content="Строительство бань под ключ, по индивидуальному дизайну">
 	<title>Банный дом: строительство бань</title>
-	<link rel="stylesheet" href="./style/iconsfont.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./style/style.css">
 	<link rel="icon" href="/icons/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -190,7 +191,87 @@
 		</section>
 
 		<!-- ШЕСТОЙ БЛОК ПОРТФОЛИО -->
+		<section>
+			<div class="wrapper">
+				<h1 class="title">Портфолио</h1>
+				<div class="image-slider swiper-container">
+					<div class="image-slider__wrapper swiper-wrapper">
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-two.png" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-one.png" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-three.png" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-two.png" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-one.png" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-one.png" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="/image/portfolio-one.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<!-- СЕДЬМОЙ БЛОК КАТАЛОГ -->
+		<section>
+			<div class="wrap-background">
+				<div class="wrap container">
+					<div class="container-catalog">
+						<img src="/icons/logo-form.svg" alt="Bannyy-dom" class="container-catalog__img">
+						<h2 class="container-catalog__title">Каталог</h2>
+						<h3 class="container-catalog__offer">Скачайте полный каталог проектов
+							и вдохновляйтесь идеями!</h3>
+					</div>
 
+					<div class="catalog-form">
+						<form action="#">
+							<div class="catalog-form__container">
+								<label for="email" class="form-label">Введите вашу электронную почту</label>
+								<input type="email" id="email" placeholder="willie.jennings@example.com">
+							</div>
+							<input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input" checked>
+							<label for="formAgreement" class="checkbox__label">Нажимая кнопку Вы соглашаетесь
+								с Политикой конфиденциальности</label>
+							<button type="submit" class="catalog-form__button">Скачать каталог</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ВОСЬМОЙ БЛОК ИНФОРМАЦИЯ -->
+		<section>
+
+		</section>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="js/slider.js"></script>
 </body>
 
 </html>
