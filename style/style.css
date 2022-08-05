@@ -20,7 +20,6 @@ body {
 	font-family: 'nunito';
 }
 
-
 .background {
 	background:url(/image/back1.jpg) no-repeat top center;
 	background-size: cover;
@@ -45,6 +44,13 @@ h3 {
 	margin-bottom: 40px;
 }
 
+h4 {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 41px;
+	margin-bottom: 20px;
+}
+
 .wrap {
 	width: 100%;
 	max-width: 1288px;
@@ -62,8 +68,8 @@ h3 {
 	position: absolute;
 	width: 100%;
 	margin: 60px auto 0;
-
 }
+
 .header-container__menu {
 	display: flex;
 	justify-content: space-between;
@@ -71,10 +77,11 @@ h3 {
 	margin-bottom: 40px;
 }
 
-.header-container__menu-contact ul li{
+.header-container__menu-contact ul li {
 	display: inline;
 }
-.header-container__menu-contact ul li img{
+
+.header-container__menu-contact ul li img {
 	vertical-align: middle;
 	margin: 0 10px;
 }
@@ -92,7 +99,7 @@ h3 {
 
 .header-container__menu-contact a:hover {
 		color: #FF8F00;
-	}
+}
 
 /* МЕНЮ */
 .header__container-nav a {
@@ -102,7 +109,7 @@ h3 {
 	padding: 15px 0;
 }
 
-.header__container-nav ul{
+.header__container-nav ul {
 	display: flex;
 	justify-content: space-between;
 }
@@ -119,14 +126,13 @@ h3 {
 }
 
 .header__container-nav ul li:nth-child(4):hover,
-.header__container-nav ul li:nth-child(6):hover{
+.header__container-nav ul li:nth-child(6):hover {
 	background-image: url(/icons/arrow-orange.svg);
 }
 
 .header__container-nav a:hover {
 	color: #FF8F00;
 }
-
 
 /* ПЕРВЫЙ БЛОК ПОСЛЕ ШАПКИ БЛОК ОФФЕР */
 .offer {
@@ -177,7 +183,6 @@ h3 {
 }
 
 /* ВТОРОЙ БЛОК С МУЖИКОМ */
-
 .aboutus-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -194,7 +199,7 @@ h3 {
 }
 
 .aboutus-container__wrap-left ul,
-.aboutus-container__wrap-right ul{
+.aboutus-container__wrap-right ul {
 	display: flex;
 	flex-direction: column;
 	width: auto;
@@ -250,7 +255,6 @@ h3 {
 }
 
 /* ТРЕТИЙ БЛОК ПРО КОМАНДУ */
-
 .container-team {
 	text-align: center;
 	max-width: 1132px;
@@ -351,13 +355,16 @@ h3 {
 .container-benefits__wrap-list ul li:nth-child(1) {
 	align-self: flex-end;
 }
+
 .container-benefits__wrap-list ul li:nth-child(2) {
 	margin-left: 32px;
 }
+
 .container-benefits__wrap-list ul li:nth-child(3) {
 	align-self: flex-end;
 	margin-right: 32px;
 }
+
 .container-benefits__wrap-list ul li:nth-child(5) {
 	align-self: flex-end;
 }
@@ -493,7 +500,6 @@ h3 {
 	background: none;
 }
 
-
 .checkbox__input{
 	position: relative;
 	bottom: 15px;
@@ -502,7 +508,7 @@ h3 {
 	margin-right: 10px;
 }
 
-.checkbox__label{
+.checkbox__label {
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 268px;
@@ -510,7 +516,6 @@ h3 {
 	margin-bottom: 42px;
 	font-weight: 300;
 }
-
 
 .catalog-form__button {
 	background-color: #FF8F00;
@@ -520,4 +525,152 @@ h3 {
 	font-size: 20px;
 	margin-bottom: 371px;
 }
+
 /* ВОСЬМОЙ БЛОК ИНФОРМАЦИЯ*/
+.container-info {
+	padding-top: 160px;
+	text-align: center;
+}
+
+.container-info__title-h2 {
+	margin-bottom: 20px;
+}
+
+.container-info__title-h3-1 {
+	margin-bottom: 20px;
+}
+
+.container-info__title-h3-2 {
+	margin-bottom: 60px;
+}
+
+.container-info__plan {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 60px;
+	column-gap: 64px;
+	justify-content: center;
+}
+
+.container-info__plan-call>p {
+	max-width: 435px;
+	font-size: 20px;
+}
+
+/* БЛОК ДЕВЯТЬ ВОПРОСЫ */
+.block-answer {
+	padding-top: 160px;
+}
+
+.block-answer h2 {
+	text-align: center;
+}
+
+.answer {
+	max-width: 1068px;
+	margin: 0 auto;
+}
+
+.answer li {
+	position: relative;
+	list-style: none;
+}
+
+.answer__list>li {
+	margin-bottom: 40px;
+	border: 3px solid #FF8F00;
+	border-radius: 20px;
+	padding: 20px 0 20px 40px;
+}
+
+.answer__list li:hover .sub-answer__list {
+	display: block;
+}
+
+.sub-answer__list {
+	display: none;
+	max-width: 1068px;
+	/* text-align: left; */
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 15px 0px 0px 0px;
+	max-width: 930px;
+}
+
+.answer__list div {
+	display: inline-block;
+	max-width: 946px;
+}
+
+.arrow-correct {
+	top: 0px;
+	right: 10px;
+}
+
+.answer__link {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 41px;
+	color: black;
+	margin-right: 41px;
+}
+.answer__link:hover {
+	color: black;
+}
+
+.sub-answer__link {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.arrow {
+	position: relative;
+	border: solid #616161;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 7px;
+	transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+	bottom: 21px;
+	left: 10px;
+}
+
+.arrow:hover {
+	transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+}
+
+.carousel-control-prev-icon {
+	background-image: url(/icons/vectorbrown.svg);
+}
+
+.carousel-control-next-icon {
+	background-image: url(/icons/vectorbrownright.svg);
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+	transform: scale(1.3);
+}
+
+.carousel-indicators [data-bs-target] {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #FF8F00;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+	transform: scale(1.3);
+}
+
+.carousel-indicators {
+	bottom: -45px;
+}
+
+.block-answer__application {
+padding-top: 40px;
+}
+
+/* ДЕСЯТЫЙ БЛОК КОНТАКТЫ */
