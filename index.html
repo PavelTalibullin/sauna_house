@@ -23,7 +23,8 @@
 	<link rel="icon" href="/icons/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
@@ -71,12 +72,13 @@
 				</div>
 				<div class="swipe">
 					<p>Листай вниз и узнай больше!</p>
-					<a href="#"><img src="/icons/swipe.svg" alt=""></a>
+					<a href="#"></a>
+					<!-- <a href="#"><img src="/icons/swipe.svg" alt=""></a> -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<main>
+	<main class="main">
 		<!-- ВТОРОЙ БЛОК С МУЖИКОМ -->
 		<section>
 			<div class="wrap">
@@ -480,6 +482,96 @@
 			</div>
 		</section>
 		<!-- ДЕСЯТЫЙ БЛОК КОНТАКТЫ -->
+		<div class="wrap">
+			<div class="header-container">
+				<div class="container-contact">
+					<div class="container-contact__block1">
+						<div class="container-contact__photo">
+							<img src="/image/contact-image.png" alt="">
+						</div>
+						<div class="container-contact__title">
+							<h2 class="container-contact__h2">Контакты</h2>
+							<h4 class="container-contact__h4">Заполните форму, мы Вам перезвоним и поможем рассчитать
+								стоимость!</h4>
+							<div class="container-contact__form">
+								<form action="#">
+									<div class="container-contact__form-name">
+										<label for="contact-name">Имя</label>
+										<input type="text" id="contact-name" class="contact-name" placeholder="Анастасия">
+									</div>
+									<div class="container-contact__form-lastname">
+										<label for="contact-lastname">Фамилия</label>
+										<input type="text" placeholder="Борисенко" id="contact-lastname">
+									</div>
+									<div class="container-contact__form-tel">
+										<label for="contact-tel">Телефон</label>
+										<input type="tel" pattern="[0-9_-]{10}" title="Формат:+38(098)900 90 90"
+											placeholder="+380(__) ___ __ __" id="contact-tel">
+									</div>
+									<button type="submit" class="container-contact__button">Рассчитать стоимость</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="container-contact__mode-contact">
+						<div class="container-contact__block2">
+							<div class="container-contact__mode">
+								<h4 class="container-contact__mode-work">
+									Режим работы
+								</h4>
+								<p class="container-contact__mode-timetable">
+									Ежедневно с 10:00 до 19:00
+								</p>
+							</div>
+							<div class="container-contact__cont-info">
+								<h4 class="container-contact__cont-info-h4">
+									Контактная информация
+								</h4>
+								<a href="mailto:bannyjdom@gmail.com">bannyjdom@gmail.com</a>
+								<a href="tel:+380 (98) 540 7894">+380 (98) 540 7894</a>
+								<a href="https://goo.gl/maps/SMK5XunL3YPDwzh59" target="_blank">бул. Леси Украинки, 7Б, Киев
+								</a>
+							</div>
+							<div class="container-contact__icon">
+								<a href="#"><img src="/icons/whatsapp-brown.svg" alt="whatsapp"></a>
+								<a href="#"><img src="/icons/instagram-brown.svg" alt="instagram"></a>
+								<a href="#"><img src="/icons/telegrambrown.svg" alt="telegram"></a>
+							</div>
+						</div>
+						<div class="container-contact__map">
+							<img src="/image/map.png" alt="google map">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 11 БЛОК ФУТЕР -->
+		<footer class="footer">
+			<div class="wrap">
+				<div class="header-container">
+					<div class="footer-wrap">
+						<nav class="footer-wrap__footer-nav">
+							<ul>
+								<li><a href="#">Материалы отделки</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Преимущества</a></li>
+								<li><a href="#">Информация</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="footer-wrap__footer-img">
+							<a href="#"><img src="/icons/cib_vibergrey.svg" alt="viber"></a>
+							<a href="#"><img src="/icons/instagram-gray.svg" alt="instagram"></a>
+							<a href="#"><img src="/icons/telegram-gray.svg" alt="Telegram"></a>
+						</div>
+						<p class="footer-wrap__p">Строительство бани и сауны “Банный Дом”</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 
 
