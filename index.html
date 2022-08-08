@@ -20,7 +20,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="./style/style.css">
-	<link rel="icon" href="/icons/favicon.svg">
+	<link rel="icon" href="./image/icons/favicon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
@@ -34,28 +34,46 @@
 				<div class="header-container__wrap">
 					<div class="header-container__menu">
 						<div class="header-contaier__menu-logo">
-							<a href="#"><img src="/icons/logo.svg" alt="Bannyy-dom"></a>
+							<a href="#"><img src="./image/icons/logo.svg" alt="Bannyy-dom"></a>
 						</div>
 						<div class="header-container__menu-contact">
 							<ul>
-								<li><a href="#"><img src="/icons/whatsapp-gray.svg" alt="whatsapp"></a></li>
-								<li><a href="#"><img src="/icons/instagram-gray.svg" alt="instagram"></a></li>
-								<li><a href="#"><img src="/icons/telegram-gray.svg" alt="telegram"></a></li>
+								<li><a href="#"><img src="./image/icons/whatsapp-gray.svg" alt="whatsapp"></a></li>
+								<li><a href="#"><img src="./image/icons/instagram-gray.svg" alt="instagram"></a></li>
+								<li><a href="#"><img src="./image/icons/telegram-gray.svg" alt="telegram"></a></li>
 								<li><a href="tel:+380(98)5407894">+380 (98) 540 7894</a></li>
 							</ul>
 						</div>
 					</div>
-					<nav class="header__container-nav wrap">
-						<ul>
-							<li><a href="#">Материалы отделки</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Преимущества</a></li>
-							<li><a href="#">Информация</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</nav>
+					<div class="wrap">
+						<nav class="header__container-nav">
+							<ul class="header__container-menu__list">
+								<li><a href="#" class="header__container-menu__link">Материалы отделки</a></li>
+								<li><a href="#" class="header__container-menu__link">Каталог</a></li>
+								<li><a href="#" class="header__container-menu__link">Портфолио</a></li>
+								<li><a href="#" class="header__container-menu__link">О компании<span
+											class="header__container-menu__arrow header-arrow"></span></a>
+									<ul class="header__container-sub-menu__list">
+										<div>
+											<li><a href="#" class="header__container-sub-menu__link">Опыт</a></li>
+										</div>
+										<div>
+											<li><a href="#" class="header__container-sub-menu__link">Наша команда</a></li>
+										</div>
+									</ul>
+								</li>
+								<li><a href="#" class="header__container-menu__link">Преимущества</a></li>
+								<li><a href="#" class="header__container-menu__link">Информация<span
+											class="header__container-menu__arrow header-arrow"></span></a>
+									<ul class="header__container-sub-menu__list">
+										<li><a href="#" class="header__container-sub-menu__link">Этапы проекта</a></li>
+										<li><a href="#" class="header__container-sub-menu__link">Часто задаваемые вопросы</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="header__container-menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -72,8 +90,7 @@
 				</div>
 				<div class="swipe">
 					<p>Листай вниз и узнай больше!</p>
-					<a href="#"></a>
-					<!-- <a href="#"><img src="/icons/swipe.svg" alt=""></a> -->
+					<a href="#aboutush2"></a>
 				</div>
 			</div>
 		</div>
@@ -84,7 +101,7 @@
 			<div class="wrap">
 				<div class="header-container">
 					<div class="aboutus-container">
-						<h2>О нас</h2>
+						<h2><a name="aboutush2"></a>О нас</h2>
 						<div class="aboutus-container__wrap">
 							<div class="aboutus-container__wrap-left">
 								<ul>
@@ -95,7 +112,7 @@
 								</ul>
 							</div>
 							<div class="aboutus-container__wrap-center">
-								<img src="/image/avatar-block-two.png" alt="">
+								<img src="./image/avatar-block-two.png" alt="">
 							</div>
 							<div class="aboutus-container__wrap-right">
 								<ul>
@@ -118,15 +135,15 @@
 						<h2>У нас опытная команда</h2>
 						<div class="container-team__wrap">
 							<div class="container-team__item">
-								<img src="/image/avatar-pen.png" alt="">
+								<img src="./image/avatar-pen.png" alt="">
 								<p>Больше 20 проектов реализовано каждым специалистом </p>
 							</div>
 							<div class="container-team__item">
-								<img src="/image/avatar-office.png" alt="">
+								<img src="./image/avatar-office.png" alt="">
 								<p>Каждый специалист более 7 лет на рынке </p>
 							</div>
 							<div class="container-team__item">
-								<img src="/image/avatar-man.png" alt="">
+								<img src="./image/avatar-man.png" alt="">
 								<p>Обученные менеджера отвечают меньше чем за минуту</p>
 							</div>
 						</div>
@@ -171,27 +188,27 @@
 						<h2>Материалы отделки</h2>
 						<div class="container-material__tree">
 							<div class="container-material__tree-item">
-								<img src="/image/lipa.png" alt="">
+								<img src="./image/lipa.png" alt="">
 								<p>Липа</p>
 							</div>
 							<div class="container-material__tree-item">
-								<img src="/image/termoosina.png" alt="">
+								<img src="./image/termoosina.png" alt="">
 								<p>Термоосина</p>
 							</div>
 							<div class="container-material__tree-item">
-								<img src="/image/termoolkha.png" alt="">
+								<img src="./image/termoolkha.png" alt="">
 								<p>Термоольха</p>
 							</div>
 							<div class="container-material__tree-item">
-								<img src="/image/olkha.png" alt="">
+								<img src="./image/olkha.png" alt="">
 								<p>Ольха</p>
 							</div>
 							<div class="container-material__tree-item">
-								<img src="/image/kanadakedr.png" alt="">
+								<img src="./image/kanadakedr.png" alt="">
 								<p>Канадский кедр</p>
 							</div>
 							<div class="container-material__tree-item">
-								<img src="/image/altaykedr.png" alt="">
+								<img src="./image/altaykedr.png" alt="">
 								<p>Алтайский кедр</p>
 							</div>
 						</div>
@@ -207,37 +224,37 @@
 					<div class="image-slider__wrapper swiper-wrapper">
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-two.png" alt="">
+								<img src="./image/portfolio-two.png" alt="">
 							</div>
 						</div>
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-one.png" alt="">
+								<img src="./image/portfolio-one.png" alt="">
 							</div>
 						</div>
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-three.png" alt="">
+								<img src="./image/portfolio-three.png" alt="">
 							</div>
 						</div>
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-two.png" alt="">
+								<img src="./image/portfolio-two.png" alt="">
 							</div>
 						</div>
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-one.png" alt="">
+								<img src="./image/portfolio-one.png" alt="">
 							</div>
 						</div>
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-one.png" alt="">
+								<img src="./image/portfolio-one.png" alt="">
 							</div>
 						</div>
 						<div class="image-slider__slide swiper-slide">
 							<div class="image-slider__image">
-								<img src="/image/portfolio-one.png" alt="">
+								<img src="./image/portfolio-one.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -253,7 +270,7 @@
 				<div class="wrap">
 					<div class="header-container">
 						<div class="container-catalog">
-							<img src="/icons/logo-form.svg" alt="Bannyy-dom" class="container-catalog__img">
+							<img src="./image/icons/logo-form.svg" alt="Bannyy-dom" class="container-catalog__img">
 							<h2 class="container-catalog__title">Каталог</h2>
 							<h3 class="container-catalog__offer">Скачайте полный каталог проектов
 								и вдохновляйтесь идеями!</h3>
@@ -285,23 +302,23 @@
 							<h3 class="container-info__title-h3-2">Внутренняя отделка бани под ключ</h3>
 							<div class="container-info__plan">
 								<div class="container-info__plan-call">
-									<img src="/image/block-info-one.png" alt="">
+									<img src="./image/block-info-one.png" alt="">
 									<h4>Заявка или звонок</h4>
 									<p>Оставьте заявку на сайте либо позвоните по телефону. Мы обсудим все детали и поможем с
 										выбором материала</p>
 								</div>
 								<div class="container-info__plan-call">
-									<img src="/image/block-info-two.png" alt="">
+									<img src="./image/block-info-two.png" alt="">
 									<h4>Рассчет стоимости</h4>
 									<p>Наш специалист на участке рассчитывает стоимость проекта</p>
 								</div>
 								<div class="container-info__plan-call">
-									<img src="/image/block-info-three.png" alt="">
+									<img src="./image/block-info-three.png" alt="">
 									<h4>Договор и оплата</h4>
 									<p>Согласовываем сроки проекта и полную стоимость работы. Подписываем договор</p>
 								</div>
 								<div class="container-info__plan-call">
-									<img src="/image/block-info-four.png" alt="">
+									<img src="./image/block-info-four.png" alt="">
 									<h4>Начало работ под ключ</h4>
 									<p>Мы принимаемся за работу под ключ, а вы смотрите за каждым этапом проекта</p>
 								</div>
@@ -487,7 +504,7 @@
 				<div class="container-contact">
 					<div class="container-contact__block1">
 						<div class="container-contact__photo">
-							<img src="/image/contact-image.png" alt="">
+							<img src="./image/contact-image.png" alt="">
 						</div>
 						<div class="container-contact__title">
 							<h2 class="container-contact__h2">Контакты</h2>
@@ -533,13 +550,13 @@
 								</a>
 							</div>
 							<div class="container-contact__icon">
-								<a href="#"><img src="/icons/whatsapp-brown.svg" alt="whatsapp"></a>
-								<a href="#"><img src="/icons/instagram-brown.svg" alt="instagram"></a>
-								<a href="#"><img src="/icons/telegrambrown.svg" alt="telegram"></a>
+								<a href="#"><img src="./image/icons/whatsapp-brown.svg" alt="whatsapp"></a>
+								<a href="#"><img src="./image/icons/instagram-brown.svg" alt="instagram"></a>
+								<a href="#"><img src="./image/icons/telegrambrown.svg" alt="telegram"></a>
 							</div>
 						</div>
 						<div class="container-contact__map">
-							<img src="/image/map.png" alt="google map">
+							<img src="./image/map.png" alt="google map">
 						</div>
 					</div>
 				</div>
@@ -563,9 +580,9 @@
 							</ul>
 						</nav>
 						<div class="footer-wrap__footer-img">
-							<a href="#"><img src="/icons/cib_vibergrey.svg" alt="viber"></a>
-							<a href="#"><img src="/icons/instagram-gray.svg" alt="instagram"></a>
-							<a href="#"><img src="/icons/telegram-gray.svg" alt="Telegram"></a>
+							<a href="#"><img src="./image/icons/cib_vibergrey.svg" alt="viber"></a>
+							<a href="#"><img src="./image/icons/instagram-gray.svg" alt="instagram"></a>
+							<a href="#"><img src="./image/icons/telegram-gray.svg" alt="Telegram"></a>
 						</div>
 						<p class="footer-wrap__p">Строительство бани и сауны “Банный Дом”</p>
 					</div>

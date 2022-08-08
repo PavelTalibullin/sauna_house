@@ -22,7 +22,7 @@ body {
 }
 
 .background {
-	background:url(/image/back1.jpg) no-repeat top center;
+	background:url(../image/back1.jpg) no-repeat top center;
 	background-size: cover;
 	color: #FFFFFF;
 	margin-bottom: 160px;
@@ -114,7 +114,7 @@ h4 {
 	color: #FFFFFF;
 	font-size: 20px;
 	font-weight: 300;
-	padding: 15px 0;
+	padding: 15px auto;
 }
 
 .header__container-nav ul {
@@ -122,31 +122,60 @@ h4 {
 	justify-content: space-between;
 }
 
-.header__container-nav ul li:nth-child(4),
-.header__container-nav ul li:nth-child(6) {
-	list-style: none;
-	background: url(/icons/arrow-bottom.svg) no-repeat;
-	background-size: 18px;
-	height: 25px;
-	background-position: right;
-	padding-right: 25px;
-	background-position-y: 5px;
+.header__container-nav li {
+	position: relative;
 }
 
-.header__container-nav ul li:nth-child(4):hover,
-.header__container-nav ul li:nth-child(6):hover {
-	background-image: url(/icons/arrow-orange.svg);
+.header__container-menu__list li:hover .header__container-sub-menu__list li {
+	display: block;
+}
+
+.header__container-sub-menu__list  {
+	flex-direction: column;
+	position: absolute;
+	width: 172px;
+	left: 0;
+	top: 20px;
+	padding: 10px 0 0 0;
+}
+
+.header__container-sub-menu__list li{
+	display: none;
 }
 
 .header__container-nav a:hover {
 	color: #FF8F00;
 }
 
+.header__container-menu__list a:hover .header-arrow{
+	border-top: 17px solid #FF9F25;
+}
+
+.header__container-menu__arrow  {
+	
+}
+
+.header-arrow {
+	position: relative;
+	right: 0;
+	top: 22px;
+	left: 12px;
+	width: 0;
+	height: 0;
+	border-top: 17px solid #FFFFFF;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-radius: 3px;
+}
+
+body.mouse .header__container-menu__list>li:hover .header__container-sub-menu__list {
+	display: block;
+}
+
 /* ПЕРВЫЙ БЛОК ПОСЛЕ ШАПКИ БЛОК ОФФЕР */
 .offer {
 	max-width: 908px;
-	margin-left: 76px;
-	margin-bottom: 170px;
+	margin: 0 15px 170px 76px;
 	padding-top: 315px;
 }
 
@@ -181,22 +210,15 @@ h4 {
 	font-size: 24px;
 }
 
-/* .swipe a img {
-	width: 72px;
-	height: 72px;
-} */
-
-/* .swipe a img:hover {
-	transform: scale(1.2);
-} */
-
 .swipe a {
-	background-image: url(/icons/swipe.svg);
+	background-image: url(../image/icons/swipe.svg);
 	background-size: 72px;
+	background-repeat: no-repeat;
 	width: 72px;
 	height: 72px;
 	padding: 10px;
 }
+
 .swipe a:hover {
 	transform: scale(1.2);
 }
@@ -228,7 +250,7 @@ h4 {
 
 .aboutus-container__wrap-left ul li {
 	list-style: none;
-	background-image: url(/icons/Ellipse4.svg);
+	background-image: url(../image/icons/Ellipse4.svg);
 	background-repeat: no-repeat;
 	background-size: 24px;
 	background-position: right;
@@ -241,7 +263,7 @@ h4 {
 }
 
 .aboutus-container__wrap-left ul li:hover {
-	background-image: url(/icons/ellipses.svg);
+	background-image: url(../image/icons/ellipses.svg);
 }
 
 .aboutus-container__wrap-left ul li:nth-child(n+2):nth-child(-n+3) {
@@ -254,7 +276,7 @@ h4 {
 
 .aboutus-container__wrap-right ul li {
 	list-style: none;
-	background-image: url(/icons/Ellipse4.svg);
+	background-image: url(../image/icons/Ellipse4.svg);
 	background-repeat: no-repeat;
 	background-size: 24px;
 	background-position: left;
@@ -266,7 +288,7 @@ h4 {
 }
 
 .aboutus-container__wrap-right ul li:hover {
-	background-image: url(/icons/ellipses.svg);
+	background-image: url(../image/icons/ellipses.svg);
 }
 
 .aboutus-container__wrap-right ul li:nth-child(n+2):nth-child(-n+3) {
@@ -300,7 +322,7 @@ h4 {
 
 /* ЧЕТВЕРТЫЙ БЛОК ПРЕИМУЩЕСТВА */
 .background-benefits {
-	background: url(/image/background3.jpg) no-repeat;
+	background: url(../image/background3.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -319,7 +341,7 @@ h4 {
 }
 
 .container-benefits__wrap-text {
-	background-image: url(/image/shadow.svg);
+	background-image: url(../image/shadow.svg);
 	background-repeat: no-repeat;
 	backdrop-filter: blur(2px);
 	max-width: 412px;
@@ -355,22 +377,22 @@ h4 {
 }
 
 .container-benefits__wrap-list ul li {
-	background-image: url(/icons/Ellipse3.svg);
+	background-image: url(../image/icons/Ellipse3.svg);
 	background-repeat: no-repeat;
 	background-size: 24px;
 	background-position: left;
 	background-position-y: 5px;
-	padding-left: 29px;
+	padding-left: 38px;
 	height: 30px;
 	font-size: 24px;
 	font-weight: 600;
 }
 
 .container-benefits__wrap-list ul li:hover {
-	background-image: url(/icons/ellipses4.svg);
-	background-position-y: -9px;
-	background-position-x: -12px;
-	background-size: 50px;
+	background-image: url(../image/icons/ellipseswhite2.svg);
+	background-position-y: 2px;
+	background-position-x: -7px;
+	background-size: 40px;
 }
 
 .container-benefits__wrap-list ul li:nth-child(1) {
@@ -439,7 +461,6 @@ h4 {
 }
 
 .image-slider__image img {
-	vertical-align: top;
 	max-width: 100%;
 	height: 500px;
 }
@@ -453,17 +474,29 @@ h4 {
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
-	background-color: #FF8F00;
 }
 
 .image-slider .swiper-pagination-bullet:hover {
 	transform: scale(1.3);
-	background-color: #FF8F00;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #FF8F00 !important;
+	width: 26px !important;
+	height: 26px !important;
+	top: 2px;
+	opacity: 0.8 !important;
+}
+
+.image-slider .swiper-pagination-bullet {
+	position: relative;
+	background-color: #E0E0E0;
+	opacity: 0.5;
 }
 
 /* СЕДЬМОЙ БЛОК КАТАЛОГ */
 .wrap-background {
-	background-image: url(/image/background-block6.jpg);
+	background-image: url(../image/background-block6.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -473,6 +506,7 @@ h4 {
 }
 
 .container-catalog {
+	margin-left: 53px;
 	padding-top: 60px;
 	color: #fff;
 }
@@ -496,6 +530,7 @@ h4 {
 
 .catalog-form{
 	max-width: 340px;
+	margin-left: 53px;
 	color: #fff;
 }
 
@@ -539,38 +574,26 @@ h4 {
 	font-weight: 300;
 }
 
-.swiper-pagination-bullet {
-	background-color: #616161;
-}
+
 
 .catalog-form__button {
-	/* background-color: #E0E0E0;
-	color: #FFFFFF; */
+	background-color: #FF8F00;
+	color: #FFFFFF;
 	padding: 12.5px 26.5px;
 	border-radius: 16px;
 	font-size: 20px;
 	margin-bottom: 371px;
 }
 
-/* .catalog-form__button:hover {
+.catalog-form__button:hover {
 	background-color: #DC810E;
 }
 
 .catalog-form__button:active {
 	background-color: #FF9F25;
-} */
-
-.swiper-pagination-bullet-active {
-	background-color: #FF8F00 !important;
-	width: 26px !important;
-	height: 26px !important;
-	top: 2px;
 }
 
-.image-slider .swiper-pagination-bullet {
-	position: relative;
-	background-color: #616161;
-}
+
 
 /* ВОСЬМОЙ БЛОК ИНФОРМАЦИЯ*/
 .container-info {
@@ -640,7 +663,6 @@ h4 {
 
 .sub-answer__list {
 	display: none;
-	max-width: 1068px;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -700,13 +722,13 @@ h4 {
 }
 
 .carousel-control-prev-icon {
-	background-image: url(/icons/vectorbrown.svg);
+	background-image: url(../image/icons/vectorbrown.svg);
 	position: absolute;
 	top: 130px;
 }
 
 .carousel-control-next-icon {
-	background-image: url(/icons/vectorbrownright.svg);
+	background-image: url(../image/icons/vectorbrownright.svg);
 	position: absolute;
 	top: 130px;
 }
@@ -720,6 +742,7 @@ h4 {
 	width: 20px;
 	border-radius: 50%;
 	background-color: #E0E0E0;
+	margin: 0 5px;
 }
 
 .carousel-indicators [data-bs-target]:hover {
@@ -731,7 +754,11 @@ h4 {
 }
 
 button.active {
+	position: relative;
 	background-color: rgb(255, 143, 0, 0.8) !important;
+	width: 26px !important;
+	height: 26px !important;
+	bottom: 3px;
 }
 
 .block-answer__application {
@@ -917,6 +944,10 @@ button.active {
 	justify-content: space-between;
 }
 
+.footer-wrap__footer-nav a{
+	padding: 15px;
+}
+
 .footer-wrap__footer-nav a:hover {
 	color: #FF8F00;
 }
@@ -928,12 +959,70 @@ button.active {
 }
 
 .footer-wrap__footer-img a:nth-child(2) {
-	padding: 0 39px 0 39px;
+	margin: 0 39px 0 39px;
 }
+
 .footer-wrap__footer-img a:hover {
 	transform: scale(1.3);
 }
 
 .footer-wrap__p {
 	text-align: center;
+}
+
+
+
+@media (max-width:1200px) {
+	.carousel-control-prev,
+	.carousel-control-next {
+		display: none;
+	}
+}
+
+
+
+@media (max-width: 1100px) {
+	.header__container-nav a {
+		font-size: 18px;
+	}
+
+	.offer {
+		margin-bottom: 100px;
+	}
+
+	.offer-btn {
+		padding: 11.5px 26.5px;
+	}
+
+	.swipe p {
+		font-size: 22px;
+	}
+
+	.swipe a {
+		background-size: 65px;
+		width: 65px;
+		width: 65px;
+	}
+
+	h1 {
+		font-size: 54px;
+	}
+
+	h2 {
+		font: 32px;
+	}
+
+/* БЛОК С МУЖИКОМ */
+.aboutus-container__wrap-center {
+	display: none;
+}
+
+.aboutus-container__wrap-right {
+	position: relative;
+	top: 163px;
+}
+
+.aboutus-container {
+	margin: 0 auto 160px;
+}
 }
