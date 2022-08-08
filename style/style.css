@@ -1025,4 +1025,57 @@ button.active {
 .aboutus-container {
 	margin: 0 auto 160px;
 }
+/* БЛОК С КОНТАКТАМИ */
+.container-contact__photo {
+	display: none;
+}
+
+.container-contact__block1 {
+	justify-content: center;
+	text-align: center;
+}
+
+.container-contact__h2 {
+	margin: 0 0 60px 0;
+}
+
+.container-contact__h4 {
+	display: none;
+}
+
+.container-contact__title {
+	width: 518px;
+	margin: 0 auto;
+}
+
+.container-contact__form {
+	max-width: 448px;
+	margin: 0 auto;
+}
+
+.container-contact__form-tel {
+	margin: 0 0 51px 0;
+}
+
+.container-contact__button-div {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 60px 0;
+}
+
+.container-contact__mode-contact {
+	flex-direction: column;
+	align-self: center;
+	text-align: center;
+}
+
+.container-contact__block2 {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.container-contact__icon img{
+	width: 40px;
+	margin: 0 0 40px 0;
+}
 }
