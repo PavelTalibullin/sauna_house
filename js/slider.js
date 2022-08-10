@@ -1,11 +1,3 @@
-$(document).ready(function(){
-	$('.header-burger').click(function(event) {
-		$('.header-burger,.header__container-menu__list').toggleClass('active');
-	});
-});
-
-
-
 new Swiper ('.image-slider',{
 	navigation: {
 		nextEl: '.swiper-button-next',
