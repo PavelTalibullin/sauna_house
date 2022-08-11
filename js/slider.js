@@ -20,6 +20,9 @@ new Swiper ('.image-slider',{
 	spaceBetween: 80,
 
 	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
 		479: {
 			slidesPerView: 1,
 		},
@@ -34,7 +37,6 @@ new Swiper ('.image-slider',{
 		},
 	}
 });
-
 
 var isMobile = {
 	Android: function () {
