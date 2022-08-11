@@ -71,4 +71,3 @@ if(isMobile.any()){
 }else{
 	body.classList.add('mouse');
 }
-
