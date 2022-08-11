@@ -55,7 +55,6 @@ h4 {
 .wrap {
 	width: 100%;
 	max-width: 1288px;
-	padding: 0 auto;
 	margin: 0 auto;
 	min-height: 100%;
 	display: flex;
@@ -114,7 +113,8 @@ h4 {
 	color: #FFFFFF;
 	font-size: 20px;
 	font-weight: 300;
-	padding: 15px auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .header__container-nav ul {
@@ -1159,9 +1159,9 @@ button.active {
 	.header-burger {
 		display: block;
 		position: relative;
-		right: -23px;
-		top: 23px;
-		width: 110px;
+		top: 30px;
+		right: 22px;
+		width: 65px;
 		height: 53px;
 	}
 
